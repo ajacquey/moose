@@ -1,0 +1,20 @@
+[Tests]
+  [./working]
+    type = 'Exodiff'
+    input = 'working.i'
+    exodiff = 'working_out.e'
+    issues = '#15329'
+  [../]
+  [./failing]
+    type = 'Exodiff'
+    input = 'failing.i'
+    exodiff = 'failing_out.e'
+    issues = '#15329'
+  [../]
+  [./failing_aux]
+    type = 'Exodiff'
+    input = 'failing_aux.i'
+    exodiff = 'failing_aux_out.e'
+    issues = '#15329'
+  [../]
+[]
